@@ -1,12 +1,15 @@
-name: Agendar Hello World
+name: Teste Hello World agendado
 
 on:
   schedule:
-    - cron: "15 23 * * *" # Executa às 23:10 UTC todos os dias
+    - cron: "*/15 * * * *" # Executa a cada 15 minutos
+  workflow_dispatch: # Permite execução manual
 
 jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Manda um Hello
+      - name: Say Hello
         run: echo "Hello World! Este é um workflow agendado."
+      - name: Print timestamp
+        run: date
