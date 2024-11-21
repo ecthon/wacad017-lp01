@@ -1,0 +1,12 @@
+name: Scheduled Hello World
+
+on:
+  schedule:
+    - cron: "0 12 * * *" # Executa às 12:00 UTC todos os dias
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello World! Este é um workflow agendado."
