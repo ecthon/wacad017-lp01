@@ -1,4 +1,4 @@
-name: Scheduled Hello World
+name: Agendar Hello World
 
 on:
   schedule:
@@ -8,5 +8,5 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Say Hello
+      - name: Manda um Hello
         run: echo "Hello World! Este é um workflow agendado."
