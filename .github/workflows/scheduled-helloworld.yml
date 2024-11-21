@@ -2,7 +2,7 @@ name: Agendar Hello World
 
 on:
   schedule:
-    - cron: "0 12 * * *" # Executa às 12:00 UTC todos os dias
+    - cron: "0 19 * * *" # Executa às 19:00 UTC todos os dias
 
 jobs:
   hello:
